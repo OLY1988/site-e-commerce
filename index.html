@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Magasin en ligne</title>
+ 
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lien vers le CDN pour FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mon Magasin en Ligne</h1>
+    <select id="currency-selector">
+        <option value="TND">TND</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+      <!-- Contenu des produits -->
+    </section>
+
+    <!-- Panier (caché par défaut) -->
+    <aside class="cart-modal hidden">
+      <div class="cart-content">
+        <!-- Contenu du panier -->
+      </div>
+      <button class="close-cart">Fermer</button>
+    </aside>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
