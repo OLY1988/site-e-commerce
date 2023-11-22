@@ -63,7 +63,7 @@ const products = [
           price: 450,
           image: "image/razer.jpeg",
           currency: "TND",
-          liked: false
+          liked: true
         }
 
       
@@ -140,7 +140,7 @@ const products = [
   
   // Gestion de l'icône "Coeur" pour aimer les produits
   document.addEventListener('click', function(event) {
-    if (event.target.classList.contains('like')) {
+    if (event.target.classList.contains('fa-heart')) {
       const productId = parseInt(event.target.dataset.id);
       const product = products.find(product => product.id === productId);
       product.liked = !product.liked;
